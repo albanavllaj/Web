@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete User</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles/registration.css">
+</head>
+<body>
+<nav>
+    <a href="registration.html">Register</a>
+    <a href="read.php">Read</a>
+    <a href="search.html">Search</a>
+    <a href="modify.html">Modify</a>
+    <a href="delete.php.html">Delete</a>
+</nav>
+
+<h2>Delete User</h2>
+
+<form action="delete_user.php" method="post">
+    <label for="deleteUserId">Enter User ID to Delete:</label>
+    <input type="text" id="deleteUserId" name="deleteUserId" required>
+    <br>
+    <input type="submit" value="Delete User" class="button-5">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modify User Data</title>
+  <link rel="stylesheet" type="text/css" href="assets/styles/registration.css">
+</head>
+<body>
+<nav>
+  <a href="registration.html">Register</a>
+  <a href="read.php">Read</a>
+  <a href="search.html">Search</a>
+  <a href="modify.html">Modify</a>
+  <a href="delete.php.html">Delete</a>
+</nav>
+
+<h2>Modify Your Data</h2>
+
+<!-- Modify User Data Form -->
+<form action="modify_data.php" method="post" enctype="multipart/form-data">
+  <label for="userId">Enter User ID:</label>
+  <input type="text" id="userId" name="userId" required>
+  <br>
+  <label for="firstname">First Name:</label>
+  <input type="text" id="firstname" name="firstname">
+  <br>
+  <label for="lastname">Last Name:</label>
+  <input type="text" id="lastname" name="lastname">
+  <br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+  <br>
+  <label for="tel">Telephone:</label>
+  <input type="tel" id="tel" name="tel">
+  <br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password">
+  <br>
+  <label for="image">Select New Image:</label>
+  <input type="file" name="image">
+  <br>
+  <br>
+  <input type="submit" value="Modify Data" class="button-6">
+</form>
+
+
+
+
+</body>
+</html>

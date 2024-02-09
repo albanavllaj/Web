@@ -1,0 +1,33 @@
+table {
+    font-family: "Lato","sans-serif";
+}
+
+/* removed the border from the table data rows  */
+table.one {
+    margin-bottom: 3em;
+    border-collapse:collapse;   }
+
+td {
+    text-align: center;
+    width: 10em;
+    padding: 1em;       }
+
+th {
+    text-align: center;
+    padding: 1em;
+    background-color: #e8503a;
+    color: white;       }
+
+tr {
+    height: 1em;
+}
+
+/* added all even rows a #eee color  */
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+
+/* added all odd rows a #fff color  */
+table tr:nth-child(odd) {
+    background-color:#fff;
+}

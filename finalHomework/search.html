@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Search</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles/registration.css">
+</head>
+<body>
+<nav>
+    <a href="registration.html">Register</a>
+    <a href="read.php">Read</a>
+    <a href="search.html">Search</a>
+    <a href="modify.html">Modify</a>
+    <a href="delete.php.html">Delete</a>
+</nav>
+<h2>User Search</h2>
+
+<form action="search_users.php" method="post">
+    <label for="searchId">Search by ID:</label>
+    <input type="text" id="searchId" name="searchId">
+    <br>
+    <label for="searchFirstName">Search by First Name:</label>
+    <input type="text" id="searchFirstName" name="searchFirstName">
+    <br>
+    <label for="searchLastName">Search by Last Name:</label>
+    <input type="text" id="searchLastName" name="searchLastName">
+    <br>
+    <br>
+    <label for="searchGender">Search by Gender:</label>
+    <select id="searchGender" name="searchGender">
+        <option value="">Select Gender</option>
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+    </select>
+    <br>
+    <br>
+    <label for="searchCars">Search by Cars:</label>
+    <input type="checkbox" id="searchBenz" name="searchCars[]" value="benz">
+    <label for="searchBenz">Benz</label>
+    <input type="checkbox" id="searchBMW" name="searchCars[]" value="bmw">
+    <label for="searchBMW">BMW</label>
+    <input type="checkbox" id="searchAudi" name="searchCars[]" value="audi">
+    <label for="searchAudi">Audi</label>
+    <br>
+    <br>
+    <label for="searchComments">Search by Comments:</label>
+    <textarea id="searchComments" name="searchComments"></textarea>
+    <br>
+    <br>
+    <input type="submit" value="Search" class="button-6">
+</form>
+
+</body>
+</html>

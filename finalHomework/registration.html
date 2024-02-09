@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles/registration.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav>
+    <a href="registration.html">Register</a>
+    <a href="read.php">Read</a>
+    <a href="search.html">Search</a>
+    <a href="modify.html">Modify</a>
+    <a href="delete.php.html">Delete</a>
+</nav>
+
+
+<div class = "title">
+    <h3>This is the registration page</h3>
+</div>
+<div class="input-form">
+      <form  id="registrationForm" method="post" action ="db_connection.php" enctype="multipart/form-data">
+          <label for="firstname">First Name:</label>
+          <input type="text" id="firstname" name="firstname" placeholder="Your First Name">
+          <span id="firstnamespan"></span>
+          <br>
+          <br>
+          <label for="lastname">Last Name:</label>
+          <input class="center-block" type="text" id="lastname" name="lastname" placeholder="Your Last Name">
+          <span id="lastnamespan"></span>
+          <br>
+          <br>
+          <label for="male">Male</label>
+          <input type="radio" id="male" name="gender" value="M">
+          <label for="female">Female</label>
+          <input type="radio" id="female" name="gender" value="F">
+          <span id="genderspan"></span>
+          <br>
+          <br>
+          <label for="birthdate">Birthdate:</label>
+          <input type="date" id="birthdate" name="birthdate">
+          <span id="birthdatespan"></span>
+          <br>
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your Email Address">
+          <span id="emailspan"></span>
+          <br>
+          <br>
+          <label for="tel">Telephone:</label>
+          <input type="tel" id="tel" name="tel" placeholder="Your Telephone Number">
+          <span id="telspan"></span>
+          <br>
+          <br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Your Password">
+          <span id="passspan"></span>
+
+          <label>Select Image File:</label>
+          <input type="file" name="image">
+          <br><br>
+
+          <!-- 1. Input type color -->
+          <label for="color">Favorite Color:</label>
+          <input type="color" id="color" name="color">
+          <br>
+          <br>
+
+          <!-- 2. Input type range values from 2010 to 2024 -->
+          <label for="year">Select Year (2010-2024):</label>
+          <input type="range" id="year" name="year" min="2010" max="2024">
+          <span id="yearspan"></span>
+          <br>
+          <br>
+
+          <!-- 3. Input type checkbox with 3 values -->
+          <label>Car Preferences:</label>
+          <input type="checkbox" id="benz" name="car[]" value="Benz">
+          <label for="benz">Benz</label>
+          <input type="checkbox" id="bmw" name="car[]" value="BMW">
+          <label for="bmw">BMW</label>
+          <input type="checkbox" id="audi" name="car[]" value="Audi">
+          <label for="audi">Audi</label>
+          <br>
+          <br>
+
+          <!-- 4. Input type textarea -->
+          <label for="comments">Additional Comments:</label>
+          <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+          <br>
+          <br>
+
+          <div class="sub-res-butt">
+              <fieldset class="submit">
+                  <legend>Submit here to save your data</legend>
+                  <input type="submit" id="submit" name="submit" class="button-6">
+              </fieldset>
+              <br><br>
+              <fieldset class="submit">
+                  <legend>Submit here to save your data</legend>
+                  <input type="reset" id="reset" name="reset" class="button-6">
+              </fieldset>
+          </div>
+      </form>
+    </div>
+<div id="resultMessage"></div>
+
+      <div class="hello-btn">
+        <button id="helloButton" class="button-6">Click me to say Hello!</button>
+      </div>
+<script src="assets/script/helloScript.js" defer></script>
+<script src="assets/script/validationForm.js" defer></script>
+</body>
+
+</html>
